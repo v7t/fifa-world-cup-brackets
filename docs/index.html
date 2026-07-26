@@ -360,6 +360,12 @@
   .rotate-notice { display: none; }
   @media (max-width: 1024px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
     .main { display: none; }
+    /* .magnifier lives outside .main (see the HTML), so hiding .main doesn't
+       touch it -- and if a touch gets interrupted by the rotation itself
+       before touchend fires, its JS state stays "active" with nothing to
+       ever clear it. Its z-index is also above .rotate-notice's, so left
+       visible it would sit on top of that notice, not behind it. */
+    .magnifier { display: none !important; }
     .rotate-notice {
       display: flex; position: fixed; inset: 0; z-index: 100;
       background: #0a0a0a; color: #f2f2f2; flex-direction: column;
@@ -909,9 +915,11 @@ function endMagnifier() { magnifier.classList.remove('active'); magnifierActive 
 // hid it. Ignoring mouse events for a moment after any real touch avoids that.
 let lastTouchAt = 0;
 const isRecentTouch = () => Date.now() - lastTouchAt < 800;
-// Phones in landscape are already blocked outright (see .rotate-notice), but
-// a touch-capable tablet wide enough to dodge that width check shouldn't get
-// the magnifier either -- it's meant for a narrow portrait screen specifically.
+// The magnifier is a portrait-only affordance -- phones in landscape are
+// already blocked outright (see .rotate-notice), but this also covers a
+// touch-capable tablet wide enough to dodge that width check, and a mouse
+// on a desktop window that's simply wider than it is tall (which is most
+// desktop windows), by the same rule.
 const isLandscape = () => window.matchMedia('(orientation: landscape)').matches;
 
 stage.addEventListener('touchstart', e => {
@@ -932,10 +940,15 @@ stage.addEventListener('touchend', e => { lastTouchAt = Date.now(); endMagnifier
 stage.addEventListener('touchcancel', e => { lastTouchAt = Date.now(); endMagnifier(); });
 
 stage.addEventListener('mouseenter', e => {
-  if (!isRecentTouch() && magnifierSvg()) startMagnifier(e.clientX, e.clientY);
+  if (!isRecentTouch() && !isLandscape() && magnifierSvg()) startMagnifier(e.clientX, e.clientY);
 });
-stage.addEventListener('mousemove', e => { if (!isRecentTouch()) moveMagnifier(e.clientX, e.clientY); });
+stage.addEventListener('mousemove', e => { if (!isRecentTouch() && !isLandscape()) moveMagnifier(e.clientX, e.clientY); });
 stage.addEventListener('mouseleave', e => { if (!isRecentTouch()) endMagnifier(); });
+
+// A screen rotation can interrupt an in-progress touch before touchend ever
+// fires, leaving the magnifier's JS state stuck "active" (the CSS above
+// force-hides it regardless, but this keeps the two in sync).
+window.addEventListener('orientationchange', endMagnifier);
 
 // Clicking a match sets the slider to it (setN), so the bracket advances to
 // that game and its details are shown -- the current game is one and the same.
