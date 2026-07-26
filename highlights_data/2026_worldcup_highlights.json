@@ -1,0 +1,1291 @@
+{
+  "competition": "World Cup 2026",
+  "source_channel": "https://www.youtube.com/@foxsports",
+  "generated_from": "worldcup.json",
+  "matches": [
+    {
+      "match_number": null,
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "highlights": {
+        "title": "Mexico vs South Africa Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=r1Afsds3ZD0"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "team1": "South Korea",
+      "team2": "Czech Republic",
+      "highlights": {
+        "title": "South Korea vs Czechia Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=QWoDfCkh7f8"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 8",
+      "date": "2026-06-18",
+      "team1": "Czech Republic",
+      "team2": "South Africa",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Czechia vs South Africa Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=jijCaWH_IxM"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 8",
+      "date": "2026-06-18",
+      "team1": "Mexico",
+      "team2": "South Korea",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Mexico vs South Korea Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=F1sMvm6D-0Y"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "team1": "Czech Republic",
+      "team2": "Mexico",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Czechia vs Mexico Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=IR891e2-JBc"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "team1": "South Africa",
+      "team2": "South Korea",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "South Africa vs South Korea Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=A7PTebEdius"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 2",
+      "date": "2026-06-12",
+      "team1": "Canada",
+      "team2": "Bosnia & Herzegovina",
+      "highlights": {
+        "title": "Canada vs Bosnia and Herzegovina Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=n5qkHOWhFAc"
+      },
+      "extended_highlights": {
+        "title": "Canada vs Bosnia and Herzegovina Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=cPwJaA22gWc"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 3",
+      "date": "2026-06-13",
+      "team1": "Qatar",
+      "team2": "Switzerland",
+      "highlights": {
+        "title": "Qatar vs Switzerland Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=CUo5J7CUnCo"
+      },
+      "extended_highlights": {
+        "title": "Qatar vs Switzerland Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=jSJs2nPJeLo"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 8",
+      "date": "2026-06-18",
+      "team1": "Switzerland",
+      "team2": "Bosnia & Herzegovina",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Switzerland vs Bosnia and Herzegovina Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=v08lQx6pThk"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 8",
+      "date": "2026-06-18",
+      "team1": "Canada",
+      "team2": "Qatar",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Canada vs Qatar Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=vz9OTeU6gTM"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "team1": "Switzerland",
+      "team2": "Canada",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Switzerland vs Canada Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=pObYkmGnk24"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "team1": "Bosnia & Herzegovina",
+      "team2": "Qatar",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Bosnia and Herzegovina vs Qatar Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=mk6m1LJdkrI"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 3",
+      "date": "2026-06-13",
+      "team1": "Brazil",
+      "team2": "Morocco",
+      "highlights": {
+        "title": "Brazil vs Morocco Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=DX5wBEslnQI"
+      },
+      "extended_highlights": {
+        "title": "Brazil vs Morocco Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=0rih2fCaXF4"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 3",
+      "date": "2026-06-13",
+      "team1": "Haiti",
+      "team2": "Scotland",
+      "highlights": {
+        "title": "Haiti vs Scotland Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=IW2BuhWuTqs"
+      },
+      "extended_highlights": {
+        "title": "Haiti vs Scotland Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=J_2Y34vSbBA"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 9",
+      "date": "2026-06-19",
+      "team1": "Scotland",
+      "team2": "Morocco",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Scotland vs Morocco Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=wff2tvitS-s"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 9",
+      "date": "2026-06-19",
+      "team1": "Brazil",
+      "team2": "Haiti",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Brazil vs Haiti Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=BphiVajPsFc"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "team1": "Scotland",
+      "team2": "Brazil",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Scotland vs Brazil Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=fWN13Oe4kA0"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 14",
+      "date": "2026-06-24",
+      "team1": "Morocco",
+      "team2": "Haiti",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Morocco vs Haiti Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=37c0v5fkCLI"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 2",
+      "date": "2026-06-12",
+      "team1": "USA",
+      "team2": "Paraguay",
+      "highlights": {
+        "title": "United States vs Paraguay Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=BXD1_mhODBU"
+      },
+      "extended_highlights": {
+        "title": "United States vs Paraguay Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=lpDZwAxVkc4"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 3",
+      "date": "2026-06-13",
+      "team1": "Australia",
+      "team2": "Turkey",
+      "highlights": {
+        "title": "Australia vs Türkiye Highlights  🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=xyKJHekC7io"
+      },
+      "extended_highlights": {
+        "title": "Australia vs Türkiye Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=LgT_qQktvjw"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 9",
+      "date": "2026-06-19",
+      "team1": "USA",
+      "team2": "Australia",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "United States vs Australia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=1gMiT5r-K7Q"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 9",
+      "date": "2026-06-19",
+      "team1": "Turkey",
+      "team2": "Paraguay",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Türkiye vs Paraguay Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=HrbIda-C9SE"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "team1": "Turkey",
+      "team2": "USA",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Türkiye vs United States Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=7JJLMyKBG90"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "team1": "Paraguay",
+      "team2": "Australia",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Paraguay vs Australia Extended Highlights 🌎🏆  2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=NdgZtyReLbY"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 4",
+      "date": "2026-06-14",
+      "team1": "Germany",
+      "team2": "Curaçao",
+      "highlights": {
+        "title": "Germany vs Curaçao Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=cGKWqfsRDgo"
+      },
+      "extended_highlights": {
+        "title": "Germany vs Curaçao Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=xHtIzadh4Lg"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 4",
+      "date": "2026-06-14",
+      "team1": "Ivory Coast",
+      "team2": "Ecuador",
+      "highlights": {
+        "title": "Ivory Coast vs Ecuador Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=pBk8BjA-X4Y"
+      },
+      "extended_highlights": {
+        "title": "Ivory Coast vs Ecuador Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=j6uB9LcLMms"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 10",
+      "date": "2026-06-20",
+      "team1": "Germany",
+      "team2": "Ivory Coast",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Germany vs Ivory Coast Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=EL9nHScp4bk"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 10",
+      "date": "2026-06-20",
+      "team1": "Ecuador",
+      "team2": "Curaçao",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Ecuador vs Curaçao Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=_JQLeADlzXM"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "team1": "Curaçao",
+      "team2": "Ivory Coast",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Curaçao vs Ivory Coast Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=Vl8LESKw8_Y"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "team1": "Ecuador",
+      "team2": "Germany",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Ecuador vs Germany Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=L4AmC_L4Cdw"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 4",
+      "date": "2026-06-14",
+      "team1": "Netherlands",
+      "team2": "Japan",
+      "highlights": {
+        "title": "Netherlands vs Japan Highlights 🌎🏆2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=m7sQP_AZ5vM"
+      },
+      "extended_highlights": {
+        "title": "Netherlands vs Japan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=SaTyQMmOpPM"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 4",
+      "date": "2026-06-14",
+      "team1": "Sweden",
+      "team2": "Tunisia",
+      "highlights": {
+        "title": "Sweden vs Tunisia Highlights | 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=MWsgrEPIni4"
+      },
+      "extended_highlights": {
+        "title": "Sweden vs Tunisia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=F47z0suCV7Y"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 10",
+      "date": "2026-06-20",
+      "team1": "Netherlands",
+      "team2": "Sweden",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Netherlands vs Sweden Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=IRllRLrG7Sg"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 10",
+      "date": "2026-06-20",
+      "team1": "Tunisia",
+      "team2": "Japan",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Tunisia vs Japan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=ATmlGGfCyBA"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "team1": "Japan",
+      "team2": "Sweden",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Japan vs Sweden Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=CerrE-MoofY"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 15",
+      "date": "2026-06-25",
+      "team1": "Tunisia",
+      "team2": "Netherlands",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Tunisia vs Netherlands Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=o0AmHN-XnOs"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 5",
+      "date": "2026-06-15",
+      "team1": "Belgium",
+      "team2": "Egypt",
+      "highlights": {
+        "title": "Belgium vs Egypt Highlights 🌎🏆2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=o_3t0d8x9JY"
+      },
+      "extended_highlights": {
+        "title": "Belgium vs Egypt Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=gQOgcN7_IZE"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 5",
+      "date": "2026-06-15",
+      "team1": "Iran",
+      "team2": "New Zealand",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Iran vs New Zealand Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=UZ_7qFbFYRY"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 11",
+      "date": "2026-06-21",
+      "team1": "Belgium",
+      "team2": "Iran",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Belgium vs Iran Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=YbiEe9pOV-s"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 11",
+      "date": "2026-06-21",
+      "team1": "New Zealand",
+      "team2": "Egypt",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "New Zealand vs Egypt Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=Ihp4QH9YkBc"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "team1": "Egypt",
+      "team2": "Iran",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Egypt vs Iran Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=vzUdJ51WH48"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "team1": "New Zealand",
+      "team2": "Belgium",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "New Zealand vs Belgium Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=Rouzq1yDV-Q"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 5",
+      "date": "2026-06-15",
+      "team1": "Spain",
+      "team2": "Cape Verde",
+      "highlights": {
+        "title": "Spain vs Cape Verde Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=YnWF8IMcqgg"
+      },
+      "extended_highlights": {
+        "title": "Spain vs Cape Verde Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=wzKYVElYRrw"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 5",
+      "date": "2026-06-15",
+      "team1": "Saudi Arabia",
+      "team2": "Uruguay",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Saudi Arabia vs Uruguay Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=Tz9R1OYdTSs"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 11",
+      "date": "2026-06-21",
+      "team1": "Spain",
+      "team2": "Saudi Arabia",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Spain vs Saudi Arabia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=w453UjgtQw4"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 11",
+      "date": "2026-06-21",
+      "team1": "Uruguay",
+      "team2": "Cape Verde",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Uruguay vs Cape Verde Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=ZXvFKZM1nL4"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "team1": "Cape Verde",
+      "team2": "Saudi Arabia",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Cape Verde vs Saudi Arabia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=grj3Ijq7cjQ"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "team1": "Uruguay",
+      "team2": "Spain",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Uruguay vs Spain Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=3OVZj9WqyDc"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 6",
+      "date": "2026-06-16",
+      "team1": "France",
+      "team2": "Senegal",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "France vs Senegal Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=SlmYDbzHqjg"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 6",
+      "date": "2026-06-16",
+      "team1": "Iraq",
+      "team2": "Norway",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Iraq vs Norway Extended Highlights 🌎🏆2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=ku1hsMdKDXQ"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 12",
+      "date": "2026-06-22",
+      "team1": "France",
+      "team2": "Iraq",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "France vs Iraq Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=Mo7aY61WF9I"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 12",
+      "date": "2026-06-22",
+      "team1": "Norway",
+      "team2": "Senegal",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Norway vs Senegal Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=vcgzGgM4uJg"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "team1": "Norway",
+      "team2": "France",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Norway vs France Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=VB1B9bkj2xc"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 16",
+      "date": "2026-06-26",
+      "team1": "Senegal",
+      "team2": "Iraq",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Senegal vs Iraq Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=oR3o61OvWLI"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 6",
+      "date": "2026-06-16",
+      "team1": "Argentina",
+      "team2": "Algeria",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Argentina vs Algeria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=GtyuIf7zykA"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 6",
+      "date": "2026-06-16",
+      "team1": "Austria",
+      "team2": "Jordan",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Austria vs Jordan Extended Highlights 🌎🏆2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=yOPRItttrPU"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 12",
+      "date": "2026-06-22",
+      "team1": "Argentina",
+      "team2": "Austria",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Argentina vs Austria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=JakdhltyECE"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 12",
+      "date": "2026-06-22",
+      "team1": "Jordan",
+      "team2": "Algeria",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Jordan vs Algeria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=qq3eMBEUbzY"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "team1": "Algeria",
+      "team2": "Austria",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Algeria vs Austria Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=fjPH_DXx12M"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "team1": "Jordan",
+      "team2": "Argentina",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Jordan vs Argentina Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=sPJIf3GfNo0"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 7",
+      "date": "2026-06-17",
+      "team1": "Portugal",
+      "team2": "DR Congo",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Portugal vs DR Congo Extended Highlights 🌎🏆2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=SjumRdNESKg"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 7",
+      "date": "2026-06-17",
+      "team1": "Uzbekistan",
+      "team2": "Colombia",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Uzbekistan vs Colombia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=Qb3ipZFspnc"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 13",
+      "date": "2026-06-23",
+      "team1": "Portugal",
+      "team2": "Uzbekistan",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Portugal vs Uzbekistan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=jqgn-kY0rFA"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 13",
+      "date": "2026-06-23",
+      "team1": "Colombia",
+      "team2": "DR Congo",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Colombia vs DR Congo Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=C-bTb3K_suE"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "team1": "Colombia",
+      "team2": "Portugal",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Colombia vs Portugal Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=cRb6GQEAsU8"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "team1": "DR Congo",
+      "team2": "Uzbekistan",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "DR Congo vs Uzbekistan Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=iCaUl2GQ3sQ"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 7",
+      "date": "2026-06-17",
+      "team1": "England",
+      "team2": "Croatia",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "England vs Croatia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=lGoe9nxRfyU"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 7",
+      "date": "2026-06-17",
+      "team1": "Ghana",
+      "team2": "Panama",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Ghana vs Panama Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=hFO9DhasJ2A"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 13",
+      "date": "2026-06-23",
+      "team1": "England",
+      "team2": "Ghana",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "England vs Ghana Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=ebuYwC7lwCk"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 13",
+      "date": "2026-06-23",
+      "team1": "Panama",
+      "team2": "Croatia",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Panama vs Croatia Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=EBWpoly7qiE"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "team1": "Panama",
+      "team2": "England",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Panama vs England Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=JOPTAAFb3_s"
+      }
+    },
+    {
+      "match_number": null,
+      "round": "Matchday 17",
+      "date": "2026-06-27",
+      "team1": "Croatia",
+      "team2": "Ghana",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Croatia vs Ghana Extended Highlights 🌎🏆 2026 FIFA World Cup™",
+        "url": "https://www.youtube.com/watch?v=j4wJ3nGXuas"
+      }
+    },
+    {
+      "match_number": 73,
+      "round": "Round of 32",
+      "date": "2026-06-28",
+      "team1": "South Africa",
+      "team2": "Canada",
+      "highlights": {
+        "title": "South Africa vs Canada Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=VoCkhiVWDdY"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 74,
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "team1": "Germany",
+      "team2": "Paraguay",
+      "highlights": {
+        "title": "Germany vs Paraguay Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=-gtI96YhJek"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 75,
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "team1": "Netherlands",
+      "team2": "Morocco",
+      "highlights": {
+        "title": "Netherlands vs Morocco Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=DkZtwwbN1YI"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 76,
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "team1": "Brazil",
+      "team2": "Japan",
+      "highlights": {
+        "title": "Brazil vs Japan Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=QgUSOlN0Tt0"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 77,
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "team1": "France",
+      "team2": "Sweden",
+      "highlights": {
+        "title": "France vs Sweden Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=II84TKpzJY4"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 78,
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "team1": "Ivory Coast",
+      "team2": "Norway",
+      "highlights": {
+        "title": "Ivory Coast vs Norway Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=rPebJKCPjK0"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 79,
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "team1": "Mexico",
+      "team2": "Ecuador",
+      "highlights": {
+        "title": "Mexico vs Ecuador Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=UDH9nQPl67k"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 80,
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "team1": "England",
+      "team2": "DR Congo",
+      "highlights": {
+        "title": "England vs DR Congo Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=x24Ir5Ua4RQ"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 81,
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "team1": "USA",
+      "team2": "Bosnia & Herzegovina",
+      "highlights": {
+        "title": "United States vs Bosnia and Herzegovina Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=NuuMIICMQxo"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 82,
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "team1": "Belgium",
+      "team2": "Senegal",
+      "highlights": {
+        "title": "Belgium vs Senegal Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=OJ84ZgReAsE"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 83,
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "team1": "Portugal",
+      "team2": "Croatia",
+      "highlights": {
+        "title": "Portugal vs Croatia Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=J9yS7PsoEck"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 84,
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "team1": "Spain",
+      "team2": "Austria",
+      "highlights": null,
+      "extended_highlights": {
+        "title": "Spain vs Austria Extended Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=J9SxUH5VCSU"
+      }
+    },
+    {
+      "match_number": 85,
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "team1": "Switzerland",
+      "team2": "Algeria",
+      "highlights": {
+        "title": "Switzerland vs Algeria Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=bSZEbYXssBI"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 86,
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "team1": "Argentina",
+      "team2": "Cape Verde",
+      "highlights": {
+        "title": "Argentina vs Cape Verde Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=EC2jOKluGRI"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 87,
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "team1": "Colombia",
+      "team2": "Ghana",
+      "highlights": {
+        "title": "Colombia vs Ghana Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=9TJRhuQOJuE"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 88,
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "team1": "Australia",
+      "team2": "Egypt",
+      "highlights": {
+        "title": "Australia vs Egypt Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 32",
+        "url": "https://www.youtube.com/watch?v=ACWOG7t8Plk"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 89,
+      "round": "Round of 16",
+      "date": "2026-07-04",
+      "team1": "Paraguay",
+      "team2": "France",
+      "highlights": {
+        "title": "Paraguay vs France Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 16",
+        "url": "https://www.youtube.com/watch?v=2ANrnnZEE6c"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 90,
+      "round": "Round of 16",
+      "date": "2026-07-04",
+      "team1": "Canada",
+      "team2": "Morocco",
+      "highlights": {
+        "title": "Canada vs Morocco Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 16",
+        "url": "https://www.youtube.com/watch?v=QLFucR6SGr4"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 91,
+      "round": "Round of 16",
+      "date": "2026-07-05",
+      "team1": "Brazil",
+      "team2": "Norway",
+      "highlights": {
+        "title": "Brazil vs Norway Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 16",
+        "url": "https://www.youtube.com/watch?v=vpcukTVSD8Q"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 92,
+      "round": "Round of 16",
+      "date": "2026-07-05",
+      "team1": "Mexico",
+      "team2": "England",
+      "highlights": {
+        "title": "Mexico vs England Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 16",
+        "url": "https://www.youtube.com/watch?v=n7cA4k6TJbs"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 93,
+      "round": "Round of 16",
+      "date": "2026-07-06",
+      "team1": "Portugal",
+      "team2": "Spain",
+      "highlights": {
+        "title": "Portugal vs Spain Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 16",
+        "url": "https://www.youtube.com/watch?v=xINJD9fo6BM"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 94,
+      "round": "Round of 16",
+      "date": "2026-07-06",
+      "team1": "USA",
+      "team2": "Belgium",
+      "highlights": {
+        "title": "United States vs Belgium Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 16",
+        "url": "https://www.youtube.com/watch?v=QL3kCTgeVKA"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 95,
+      "round": "Round of 16",
+      "date": "2026-07-07",
+      "team1": "Argentina",
+      "team2": "Egypt",
+      "highlights": {
+        "title": "Argentina vs Egypt Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 16",
+        "url": "https://www.youtube.com/watch?v=XO3x8vm0Ijc"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 96,
+      "round": "Round of 16",
+      "date": "2026-07-07",
+      "team1": "Switzerland",
+      "team2": "Colombia",
+      "highlights": {
+        "title": "Switzerland vs Colombia Highlights 🌎🏆 2026 FIFA World Cup™ | Round of 16",
+        "url": "https://www.youtube.com/watch?v=_uEzppRKcd0"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 97,
+      "round": "Quarter-final",
+      "date": "2026-07-09",
+      "team1": "France",
+      "team2": "Morocco",
+      "highlights": {
+        "title": "France vs Morocco Highlights 🌎🏆 2026 FIFA World Cup™ | Quarterfinals",
+        "url": "https://www.youtube.com/watch?v=J_1iFnRsHG0"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 98,
+      "round": "Quarter-final",
+      "date": "2026-07-10",
+      "team1": "Spain",
+      "team2": "Belgium",
+      "highlights": {
+        "title": "Spain vs Belgium Highlights 🌎🏆 2026 FIFA World Cup™ | Quarterfinals",
+        "url": "https://www.youtube.com/watch?v=jqG_pZGkLcc"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 99,
+      "round": "Quarter-final",
+      "date": "2026-07-11",
+      "team1": "Norway",
+      "team2": "England",
+      "highlights": {
+        "title": "Norway vs England Highlights 🌎🏆 2026 FIFA World Cup™ | Quarterfinals",
+        "url": "https://www.youtube.com/watch?v=dVWBrxpPVuY"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 100,
+      "round": "Quarter-final",
+      "date": "2026-07-11",
+      "team1": "Argentina",
+      "team2": "Switzerland",
+      "highlights": {
+        "title": "Argentina vs Switzerland Highlights 🌎🏆 2026 FIFA World Cup™ | Quarterfinals",
+        "url": "https://www.youtube.com/watch?v=FGhW41kIpgQ"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 101,
+      "round": "Semi-final",
+      "date": "2026-07-14",
+      "team1": "France",
+      "team2": "Spain",
+      "highlights": {
+        "title": "France vs Spain Highlights 🌎🏆 2026 FIFA World Cup™ | Semifinals",
+        "url": "https://www.youtube.com/watch?v=3JAZZr3jWD0"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 102,
+      "round": "Semi-final",
+      "date": "2026-07-15",
+      "team1": "England",
+      "team2": "Argentina",
+      "highlights": {
+        "title": "England vs Argentina Highlights 🌎🏆 2026 FIFA World Cup™ | Semifinals",
+        "url": "https://www.youtube.com/watch?v=y-4saPWrPt0"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 103,
+      "round": "Match for third place",
+      "date": "2026-07-18",
+      "team1": "France",
+      "team2": "England",
+      "highlights": {
+        "title": "France vs England Highlights 🌎🏆 2026 FIFA World Cup™ | Bronze Final",
+        "url": "https://www.youtube.com/watch?v=L1SLA0ixeWo"
+      },
+      "extended_highlights": null
+    },
+    {
+      "match_number": 104,
+      "round": "Final",
+      "date": "2026-07-19",
+      "team1": "Spain",
+      "team2": "Argentina",
+      "highlights": {
+        "title": "Spain vs Argentina Highlights 🌎🏆 2026 FIFA World Cup™ | Final",
+        "url": "https://www.youtube.com/watch?v=x-cpRHf4xd4"
+      },
+      "extended_highlights": null
+    }
+  ]
+}
