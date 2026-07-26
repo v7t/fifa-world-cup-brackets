@@ -55,8 +55,8 @@
     "score": {"ft": [1, 2], "ht": [0, 1]},
     "goals1": [{"name": "Moisés Caicedo", "minute": 67}],
     "goals2": 
-     [{"name": "Ismaila Sarr", "minute": 44, "penalty": true},
-      {"name": "Koulibaly", "minute": 70}],
+     [{"name": "Ismaïla Sarr", "minute": 44, "penalty": true},
+      {"name": "Kalidou Koulibaly", "minute": 70}],
     "group": "Group A",
     "ground": "Khalifa International Stadium, Al Rayyan"},
    {"round": "Matchday 10",
@@ -107,7 +107,7 @@
     "score": {"ft": [0, 2], "ht": [0, 0]},
     "goals1": [],
     "goals2": 
-     [{"name": "Roozbeh Cheshmi", "minute": 90, "offset": 8},
+     [{"name": "Rouzbeh Cheshmi", "minute": 90, "offset": 8},
       {"name": "Ramin Rezaeian", "minute": 90, "offset": 11}],
     "group": "Group B",
     "ground": "Ahmad bin Ali Stadium, Al Rayyan"},
@@ -127,9 +127,9 @@
     "score": {"ft": [0, 3], "ht": [0, 0]},
     "goals1": [],
     "goals2": 
-     [{"name": "Rashford", "minute": 50},
-      {"name": "Foden", "minute": 51},
-      {"name": "Rashford", "minute": 68}],
+     [{"name": "Marcus Rashford", "minute": 50},
+      {"name": "Phil Foden", "minute": 51},
+      {"name": "Marcus Rashford", "minute": 68}],
     "group": "Group B",
     "ground": "Ahmad bin Ali Stadium, Al Rayyan"},
    {"round": "Matchday 10",
@@ -139,7 +139,7 @@
     "team2": "USA",
     "score": {"ft": [0, 1], "ht": [0, 1]},
     "goals1": [],
-    "goals2": [{"name": "Pulisic", "minute": 38}],
+    "goals2": [{"name": "Christian Pulisic", "minute": 38}],
     "group": "Group B",
     "ground": "Al Thumama Stadium, Doha"},
    {"round": "Matchday 3",
@@ -150,8 +150,8 @@
     "score": {"ft": [1, 2], "ht": [1, 0]},
     "goals1": [{"name": "Lionel Messi", "minute": 10, "penalty": true}],
     "goals2": 
-     [{"name": "Saleh Al Shehri", "minute": 48},
-      {"name": "Salem Al Dawsari", "minute": 53}],
+     [{"name": "Saleh Al-Shehri", "minute": 48},
+      {"name": "Salem Al-Dawsari", "minute": 53}],
     "group": "Group C",
     "ground": "Lusail Iconic Stadium, Lusail"},
    {"round": "Matchday 3",
@@ -169,7 +169,7 @@
     "team2": "Saudi Arabia",
     "score": {"ft": [2, 0], "ht": [1, 0]},
     "goals1": 
-     [{"name": "Piotr Zielinski", "minute": 39},
+     [{"name": "Piotr Zieliński", "minute": 39},
       {"name": "Robert Lewandowski", "minute": 82}],
     "goals2": [],
     "group": "Group C",
@@ -194,7 +194,7 @@
     "score": {"ft": [0, 2], "ht": [0, 0]},
     "goals1": [],
     "goals2": 
-     [{"name": "Mac Allister", "minute": 46},
+     [{"name": "Alexis Mac Allister", "minute": 46},
       {"name": "Julián Álvarez", "minute": 67}],
     "group": "Group C",
     "ground": "Stadium 974, Doha"},
@@ -204,7 +204,7 @@
     "team1": "Saudi Arabia",
     "team2": "Mexico",
     "score": {"ft": [1, 2], "ht": [0, 0]},
-    "goals1": [{"name": "Salem Al Dawasari", "minute": 90, "offset": 5}],
+    "goals1": [{"name": "Salem Al-Dawsari", "minute": 90, "offset": 5}],
     "goals2": 
      [{"name": "Henry Martín", "minute": 47},
       {"name": "Luis Chávez", "minute": 52}],
@@ -280,9 +280,9 @@
     "team1": "Germany",
     "team2": "Japan",
     "score": {"ft": [1, 2], "ht": [1, 0]},
-    "goals1": [{"name": "Ilkay Gündogan", "minute": 33, "penalty": true}],
+    "goals1": [{"name": "İlkay Gündoğan", "minute": 33, "penalty": true}],
     "goals2": 
-     [{"name": "Ritsu Doan", "minute": 75},
+     [{"name": "Ritsu Dōan", "minute": 75},
       {"name": "Takuma Asano", "minute": 83}],
     "group": "Group E",
     "ground": "Khalifa International Stadium, Al Rayyan"},
@@ -343,11 +343,11 @@
     "score": {"ft": [2, 4], "ht": [0, 1]},
     "goals1": 
      [{"name": "Yeltsin Tejeda", "minute": 58},
-      {"name": "Juan Vargas", "minute": 70}],
+      {"name": "Juan Pablo Vargas", "minute": 70}],
     "goals2": 
      [{"name": "Serge Gnabry", "minute": 10},
-      {"name": "Kai Lukas Havertz", "minute": 73},
-      {"name": "Kai Lukas Havertz", "minute": 85},
+      {"name": "Kai Havertz", "minute": 73},
+      {"name": "Kai Havertz", "minute": 85},
       {"name": "Niclas Füllkrug", "minute": 89}],
     "group": "Group E",
     "ground": "Al Bayt Stadium, Al Khor"},
@@ -411,7 +411,7 @@
     "score": {"ft": [1, 2], "ht": [1, 2]},
     "goals1": [{"name": "Nayef Aguerd", "minute": 40, "owngoal": true}],
     "goals2": 
-     [{"name": "Hakim Zyiech", "minute": 4},
+     [{"name": "Hakim Ziyech", "minute": 4},
       {"name": "Youssef En-Nesyri", "minute": 23}],
     "group": "Group F",
     "ground": "Al Thumama Stadium, Doha"},
@@ -446,7 +446,7 @@
     "goals1": 
      [{"name": "Jean-Charles Castelletto", "minute": 29},
       {"name": "Vincent Aboubakar", "minute": 63},
-      {"name": "Jean-Eric Choupo-Moting", "minute": 66}],
+      {"name": "Eric Maxim Choupo-Moting", "minute": 66}],
     "goals2": 
      [{"name": "Strahinja Pavlović", "minute": 45, "offset": 1},
       {"name": "Sergej Milinković-Savić", "minute": 45, "offset": 3},
@@ -475,7 +475,7 @@
     "goals2": 
      [{"name": "Xherdan Shaqiri", "minute": 20},
       {"name": "Breel Embolo", "minute": 44},
-      {"name": "Freuler", "minute": 48}],
+      {"name": "Remo Freuler", "minute": 48}],
     "group": "Group G",
     "ground": "Stadium 974, Doha"},
    {"round": "Matchday 13",
@@ -546,8 +546,8 @@
     "score": {"ft": [0, 2]},
     "goals1": [],
     "goals2": 
-     [{"name": "Giorgian De Arrascaeta", "minute": 26},
-      {"name": "Giorgian De Arrascaeta", "minute": 32}],
+     [{"name": "Giorgian de Arrascaeta", "minute": 26},
+      {"name": "Giorgian de Arrascaeta", "minute": 32}],
     "group": "Group H",
     "ground": "Al Janoub Stadium, Al Wakrah"},
    {"round": "Matchday 13",
@@ -557,8 +557,8 @@
     "team2": "Portugal",
     "score": {"ft": [2, 1], "ht": [1, 1]},
     "goals1": 
-     [{"name": "Kim Young-gwon", "minute": 27},
-      {"name": "Hwang Hee-chan", "minute": 90, "offset": 1}],
+     [{"name": "Young-gwon Kim", "minute": 27},
+      {"name": "Hee-chan Hwang", "minute": 90, "offset": 1}],
     "goals2": [{"name": "Ricardo Horta", "minute": 5}],
     "group": "Group H",
     "ground": "Lusail Iconic Stadium, Lusail"},
@@ -593,8 +593,8 @@
     "score": {"ft": [3, 1], "ht": [1, 0]},
     "goals1": 
      [{"name": "Olivier Giroud", "minute": 44},
-      {"name": "Mbappé", "minute": 74},
-      {"name": "Mbappé", "minute": 90, "offset": 1}],
+      {"name": "Kylian Mbappé", "minute": 74},
+      {"name": "Kylian Mbappé", "minute": 90, "offset": 1}],
     "goals2": 
      [{"name": "Robert Lewandowski",
        "minute": 90,
@@ -673,8 +673,8 @@
     "team2": "Argentina",
     "score": {"p": [3, 4], "et": [2, 2], "ft": [2, 2], "ht": [1, 0]},
     "goals1": 
-     [{"name": "Wout Werghost", "minute": 83},
-      {"name": "Wout Werghost", "minute": 90, "offset": 11}],
+     [{"name": "Wout Weghorst", "minute": 83},
+      {"name": "Wout Weghorst", "minute": 90, "offset": 11}],
     "goals2": 
      [{"name": "Nahuel Molina", "minute": 35},
       {"name": "Lionel Messi", "minute": 73, "penalty": true}],
@@ -696,7 +696,7 @@
     "score": {"ft": [1, 2], "ht": [0, 1]},
     "goals1": [{"name": "Harry Kane", "minute": 54, "penalty": true}],
     "goals2": 
-     [{"name": "Aurelién Tchouaméni", "minute": 17},
+     [{"name": "Aurélien Tchouaméni", "minute": 17},
       {"name": "Olivier Giroud", "minute": 78}],
     "ground": "Al Bayt Stadium, Al Khor"},
    {"round": "Semi-finals",
@@ -719,7 +719,7 @@
     "score": {"ft": [2, 0], "ht": [1, 0]},
     "goals1": 
      [{"name": "Théo Hernandez", "minute": 5},
-      {"name": "Kolo Muani", "minute": 79}],
+      {"name": "Randal Kolo Muani", "minute": 79}],
     "goals2": [],
     "ground": "Al Bayt Stadium, Al Khor"},
    {"round": "Match for third place",
