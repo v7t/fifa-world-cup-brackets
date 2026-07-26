@@ -552,11 +552,18 @@ HTML = r"""<!doctype html>
   :root { font-size: 175%; }
   * { box-sizing: border-box; }
   body {
-    margin: 0; background: #0a0a0a; color: #f2f2f2; height: 100vh;
-    display: flex; flex-direction: column; overflow: hidden;
+    margin: 0; background: #0a0a0a; color: #f2f2f2;
+    height: 100vh; height: 100dvh;   /* dvh: excludes the mobile browser's address bar */
+    display: flex; flex-direction: column; overflow-x: auto; overflow-y: hidden;
     font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
   }
-  .main { flex: 1; display: flex; min-height: 0; }
+  /* Desktop only (see the mobile breakpoint below, which switches to a
+     stacked layout instead): below ~1900px -- the sum of the fixed-width
+     side columns plus a legible minimum for the bracket -- the row no
+     longer fits, so it keeps its natural width instead of crushing
+     .stage-col, and the body scrolls horizontally rather than letting the
+     crushed column's content overlap its neighbours. */
+  .main { flex: 1; display: flex; min-height: 0; min-width: 1900px; }
 
   /* left-most column: every edition, 1930-2026; selecting one swaps the
      bracket, results and match details to that tournament */
@@ -599,12 +606,36 @@ HTML = r"""<!doctype html>
   }
   .tab:hover { background: #232323; color: #f2f2f2; }
   .tab.active { background: #1c1c1c; border-color: #e6c35c; color: #e6c35c; }
+  .tab.mobile-only { display: none; }
 
   .stage {
     flex: 1; min-width: 0; display: flex; align-items: center;
     justify-content: center; padding: 8px; min-height: 0;
   }
-  .stage svg { width: 100%; height: 100%; max-height: 100%; }
+  .stage svg {
+    width: 100%; height: 100%; max-height: 100%;
+    touch-action: none;   /* so dragging a finger across the bracket doesn't scroll/zoom the page */
+    /* Without these, a press-and-hold on a team-name <text> label triggers the
+       browser's own text-selection/"Search Google for..." long-press gesture
+       instead of (or as well as) our touchstart handler below. Scoped to the
+       SVG itself, not all of .stage -- Groups view lives in .stage too, and
+       its cards need to stay normally scrollable/selectable. */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; user-select: none;
+  }
+
+  /* Circular magnifier: touching the bracket clones its current <svg> into
+     here at a larger size, then just repositions/pans that clone as the
+     finger moves -- re-cloning on every touchmove would be wasteful, and
+     the bracket's own content only changes between touches anyway. */
+  .magnifier {
+    display: none; position: fixed; width: 255px; height: 255px; border-radius: 50%;
+    border: 3px solid #e6c35c; box-shadow: 0 6px 20px rgba(0,0,0,.7);
+    overflow: hidden; z-index: 200; pointer-events: none; background: #0a0a0a;
+  }
+  .magnifier.active { display: block; }
+  .magnifier-inner { position: absolute; }
+  .magnifier-inner svg { display: block; width: 100%; height: 100%; }
 
   /* Groups view: a wrapping grid of standings + results cards, replacing the
      bracket SVG in the same stage area. */
@@ -769,10 +800,121 @@ HTML = r"""<!doctype html>
   input[type=range] { flex: 1; accent-color: #e6c35c; height: 1.4rem; cursor: pointer; }
   .count { font-size: .82rem; color: #b9b9b9; min-width: 9rem; font-variant-numeric: tabular-nums; }
   .count b { color: #e6c35c; font-size: .95rem; }
+
+  /* -------------------------------------------------------------------
+     Mobile layout (phones/narrow tablets): the desktop's four side-by-side
+     columns (years, bracket/groups, results, match) don't fit at any real
+     phone width, so below this breakpoint they become stacked, single-view
+     "pages" instead -- year picker and match details as full-screen
+     overlays, Results promoted to a third tab alongside Bracket/Groups so
+     it can share the same full-width stage area rather than needing its
+     own column.
+     ------------------------------------------------------------------- */
+  .yearbar { display: none; }
+  @media (max-width: 1024px) {
+    body { overflow: hidden; }
+    .main { flex-direction: column; min-width: 0; }
+    .tab.mobile-only { display: inline-block; }
+
+    .yearbar {
+      display: flex; align-items: center; gap: .4rem; padding: .5rem .7rem;
+      border-bottom: 1px solid #242424; cursor: pointer; flex-shrink: 0;
+    }
+    .yearbar b { flex-shrink: 0; color: #e6c35c; }
+    .yearbar .yr-flag { flex-shrink: 0; width: 1.1em; height: 1.1em; border-radius: 50%; object-fit: cover; }
+    .yearbar .yb-host {
+      flex: 1; min-width: 0; color: #b9b9b9;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .yearbar .chev { flex-shrink: 0; margin-left: auto; color: #9a9a9a; }
+
+    /* Fixed in place -- all three always fit on one row, never scroll or wrap. */
+    .view-tabs { flex-wrap: nowrap; gap: .15rem; padding: .4rem .2rem 0; justify-content: center; }
+    .tab { flex-shrink: 0; padding: .22rem .32rem; font-size: .58rem; }
+
+    .years { display: none; }
+    .years.open {
+      display: flex; position: fixed; inset: 0; z-index: 50;
+      width: 100%; background: #0a0a0a;
+    }
+
+    .stage-col, .sidebar, .details { width: 100%; }
+    .sidebar { border-left: none; border-top: 1px solid #242424; }
+    .sidebar, .details { flex-shrink: 1; }
+
+    /* The Results tab shows .sidebar full-width in place of the bracket/
+       groups stage -- but .view-tabs lives inside .stage-col alongside
+       .stage, so hiding the whole column would take the tabs down with it,
+       leaving no way back to Bracket/Groups. Only .stage itself (and the
+       Play/slider footer, meaningless outside the bracket view) hide; the
+       column shrinks to just the tabs' own height instead of continuing to
+       claim the full remaining space, and .sidebar grows to fill the rest. */
+    body.show-results .stage-col { flex: 0 0 auto; }
+    body.show-results .stage-col .stage,
+    body.show-results .stage-col .footer { display: none; }
+    .sidebar { display: none !important; }
+    body.show-results .sidebar { display: flex !important; flex: 1; min-height: 0; }
+
+    .details {
+      display: none; border-left: none;
+    }
+    .details.open {
+      display: flex; position: fixed; inset: 0; z-index: 60; background: #0a0a0a;
+    }
+
+    /* Button+slider on one row; the "N / M games played" count wraps to its
+       own row underneath, right-aligned, instead of widening the footer. */
+    .ctrl { flex-wrap: wrap; }
+    #play { min-width: auto; padding: .3rem .6rem; font-size: .72rem; }
+    .count { flex-basis: 100%; min-width: 0; text-align: right; margin-top: .2rem; }
+
+    /* Group cards assume desktop's 460px width; stack them full-width instead.
+       The standings table's Team column isn't in the fixed-width nth-child
+       list (see the desktop rule above) -- it simply gets whatever width is
+       left over after the other (explicitly sized, in em) columns. Desktop's
+       460px card leaves it enough room, but a ~360px mobile card doesn't
+       unless those columns shrink too, so this isn't just a font-size tweak. */
+    .gt-card { width: 100%; }
+    .gt-table { font-size: .56rem; }
+    .gt-table col.rank, .gt-table th:nth-child(1), .gt-table td:nth-child(1) { width: 1.3em; }
+    .gt-table th:nth-child(3), .gt-table td:nth-child(3),
+    .gt-table th:nth-child(4), .gt-table td:nth-child(4),
+    .gt-table th:nth-child(5), .gt-table td:nth-child(5),
+    .gt-table th:nth-child(6), .gt-table td:nth-child(6) { width: 1.3em; }
+    .gt-table th:nth-child(7), .gt-table td:nth-child(7),
+    .gt-table th:nth-child(8), .gt-table td:nth-child(8) { width: 1.5em; }
+    .gt-table th:nth-child(9), .gt-table td:nth-child(9) { width: 1.8em; }
+    .gt-table th:nth-child(10), .gt-table td:nth-child(10) { width: 1.6em; }
+    .details-close { display: inline-block; float: right; cursor: pointer; font-size: 1.3rem; }
+  }
+  @media (min-width: 1025px) {
+    .details-close { display: none; }
+  }
+
+  /* A side-by-side landscape layout (tried in an earlier version) wasn't a
+     good experience on a real phone, so landscape is blocked outright
+     instead: the app hides and a "please rotate" notice takes its place.
+     Gated on (hover: none) and (pointer: coarse) -- touch-only, no mouse --
+     specifically so this targets an actual rotated phone and not a desktop
+     browser window that just happens to be wider than it is tall; a mouse
+     user can size their window however they like. */
+  .rotate-notice { display: none; }
+  @media (max-width: 1024px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+    .main { display: none; }
+    .rotate-notice {
+      display: flex; position: fixed; inset: 0; z-index: 100;
+      background: #0a0a0a; color: #f2f2f2; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+      gap: 1rem; padding: 2rem; font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    .rotate-notice .icon { font-size: 3rem; }
+    .rotate-notice p { margin: 0; font-size: 1rem; color: #b9b9b9; max-width: 22rem; }
+  }
 </style>
 </head>
 <body>
   <div class="main">
+    <div class="yearbar" id="yearbar"></div>
     <aside class="years">
       <h2>World Cup</h2>
       <div class="year-list" id="years"></div>
@@ -793,10 +935,15 @@ HTML = r"""<!doctype html>
       <div class="results" id="results"></div>
     </aside>
     <aside class="details">
-      <h2>Match</h2>
+      <h2>Match <span class="details-close" id="detailsClose">&times;</span></h2>
       <div class="detail-body" id="details"></div>
     </aside>
   </div>
+  <div class="rotate-notice">
+    <div class="icon">&#128260;</div>
+    <p>Please rotate your device back to portrait to use this page.</p>
+  </div>
+  <div class="magnifier" id="magnifier"><div class="magnifier-inner" id="magnifierInner"></div></div>
 
 <script id="payload" type="application/json">/*__DATA__*/</script>
 <script>
@@ -1043,9 +1190,24 @@ function buildResults() {
       </div>`;
   });
   document.getElementById('results').innerHTML = html;
-  document.querySelectorAll('.row').forEach(r =>
-    r.addEventListener('click', () => setN(+r.dataset.i + 1)));
 }
+// Delegated on the container, attached once, rather than re-attached to each
+// .row every time buildResults() replaces them -- one listener that can't
+// end up missing or stale regardless of how many times the year changes.
+document.getElementById('results').addEventListener('click', e => {
+  const row = e.target.closest('.row');
+  if (!row) return;
+  setN(+row.dataset.i + 1);
+  openDetails();
+});
+
+// Mobile only: the Match column is a full-screen overlay there (see the
+// .details.open CSS) instead of an always-visible side column, since a
+// phone-width screen has no room for a permanent column. Harmless no-op on
+// desktop, where .open has no matching rule.
+function openDetails() { document.querySelector('.details').classList.add('open'); }
+function closeDetails() { document.querySelector('.details').classList.remove('open'); }
+document.getElementById('detailsClose').addEventListener('click', closeDetails);
 
 // "Groups" view: standings + results for every group in the current year's
 // group stage (replaces the bracket SVG in the stage area; hidden entirely
@@ -1054,27 +1216,45 @@ function hasGroups() { return D.groups && D.groups.length > 0; }
 
 function renderTabs() {
   const el = document.getElementById('viewTabs');
-  if (!hasGroups()) { el.innerHTML = ''; return; }
-  el.innerHTML = `
-    <button class="tab${VIEW === 'bracket' ? ' active' : ''}" data-v="bracket">Bracket</button>
-    <button class="tab${VIEW === 'groups' ? ' active' : ''}" data-v="groups">Groups</button>`;
+  const tabs = [`<button class="tab${VIEW === 'bracket' ? ' active' : ''}" data-v="bracket">Bracket</button>`];
+  if (hasGroups()) {
+    tabs.push(`<button class="tab${VIEW === 'groups' ? ' active' : ''}" data-v="groups">Groups</button>`);
+  }
+  // Mobile only (see .tab.mobile-only CSS): Results has its own permanent
+  // column on desktop, so this tab would be redundant there.
+  tabs.push(`<button class="tab mobile-only${VIEW === 'results' ? ' active' : ''}" data-v="results">Results</button>`);
+  el.innerHTML = tabs.join('');
   el.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => setView(b.dataset.v)));
 }
 
 function setView(v) {
-  VIEW = hasGroups() ? v : 'bracket';
+  if (v === 'groups' && !hasGroups()) v = 'bracket';
+  VIEW = v;
   renderTabs();
   const inGroups = VIEW === 'groups';
-  document.querySelector('.footer').style.display = inGroups ? 'none' : '';
+  const inResults = VIEW === 'results';
+  // Portrait mobile: promotes .sidebar (Results) from "always hidden" to
+  // "shown full-width in place of the bracket/groups stage" -- see the
+  // body.show-results CSS. No effect on desktop, where .sidebar's own
+  // inline style (set just below) already controls its visibility.
+  document.body.classList.toggle('show-results', inResults);
+  document.querySelector('.footer').style.display = (inGroups || inResults) ? 'none' : '';
   document.querySelector('.sidebar').style.display = inGroups ? 'none' : '';
   if (inGroups) {
     stage.innerHTML = renderGroups();
     document.querySelectorAll('.gt-match').forEach(el =>
-      el.addEventListener('click', () => selectGroupMatch(+el.dataset.gm)));
+      el.addEventListener('click', () => { selectGroupMatch(+el.dataset.gm); openDetails(); }));
     renderDetails(-1);
   } else {
+    // Both 'bracket' and 'results' need the real bracket SVG in #stage, even
+    // though 'results' hides it via CSS -- a .row click calls setN(), which
+    // updates #dyn *inside* that SVG. Coming here straight from 'groups'
+    // leaves #stage holding that stale HTML instead, with no #dyn in it at
+    // all, so setN() would throw trying to update an element that doesn't
+    // exist -- silently aborting before it reaches openDetails().
     stage.innerHTML = staticSvg();
     setN(+slider.value);
+    if (inResults) renderDetails(-1);
   }
 }
 
@@ -1221,6 +1401,83 @@ const stage = document.getElementById('stage');
 const slider = document.getElementById('slider');
 const rows = () => document.querySelectorAll('.row');
 
+// Circular magnifier over the bracket -- touch (phone) and mouse (desktop)
+// both drive the same show/move/hide core. Only ever active when #stage
+// currently holds the bracket <svg>; in Groups view #stage holds the group
+// cards instead, and touches/clicks there need to reach .gt-match normally.
+const magnifier = document.getElementById('magnifier');
+const magnifierInner = document.getElementById('magnifierInner');
+const MAG_SIZE = 255;
+const MAG_ZOOM = 2.5;
+const MAG_GAP = 30;   // vertical gap between the pointer and the loupe, so it doesn't sit under a finger/cursor
+let magnifierActive = false;
+
+function magnifierSvg() { return stage.querySelector('svg'); }
+
+function startMagnifier(x, y) {
+  const svg = magnifierSvg();
+  if (!svg) return;
+  magnifierInner.innerHTML = '';
+  magnifierInner.appendChild(svg.cloneNode(true));
+  magnifier.classList.add('active');
+  magnifierActive = true;
+  moveMagnifier(x, y);
+}
+
+function moveMagnifier(x, y) {
+  if (!magnifierActive) return;
+  const svg = magnifierSvg();
+  if (!svg) return;
+  const rect = svg.getBoundingClientRect();
+  const relX = x - rect.left, relY = y - rect.top;
+
+  const centerY = y - MAG_SIZE / 2 - MAG_GAP;
+  magnifier.style.left = (x - MAG_SIZE / 2) + 'px';
+  magnifier.style.top = (centerY - MAG_SIZE / 2) + 'px';
+
+  magnifierInner.style.width = (rect.width * MAG_ZOOM) + 'px';
+  magnifierInner.style.height = (rect.height * MAG_ZOOM) + 'px';
+  magnifierInner.style.left = (MAG_SIZE / 2 - relX * MAG_ZOOM) + 'px';
+  magnifierInner.style.top = (MAG_SIZE / 2 - relY * MAG_ZOOM) + 'px';
+}
+
+function endMagnifier() { magnifier.classList.remove('active'); magnifierActive = false; }
+
+// Touch browsers fire a synthetic mouseenter/mousemove shortly after a real
+// touch ends (for sites that only listen for mouse events) -- with no
+// matching mouseleave, since the "mouse" never actually moved away. Left
+// unguarded, that would pop the magnifier back up right after touchend just
+// hid it. Ignoring mouse events for a moment after any real touch avoids that.
+let lastTouchAt = 0;
+const isRecentTouch = () => Date.now() - lastTouchAt < 800;
+// Phones in landscape are already blocked outright (see .rotate-notice), but
+// a touch-capable tablet wide enough to dodge that width check shouldn't get
+// the magnifier either -- it's meant for a narrow portrait screen specifically.
+const isLandscape = () => window.matchMedia('(orientation: landscape)').matches;
+
+stage.addEventListener('touchstart', e => {
+  lastTouchAt = Date.now();
+  if (!magnifierSvg() || isLandscape()) return;   // Groups view: let the touch synthesize a normal click on .gt-match
+  const t = e.touches[0];
+  startMagnifier(t.clientX, t.clientY);
+  e.preventDefault();   // stop a held touch from starting the browser's own long-press/text-select gesture
+}, { passive: false });
+stage.addEventListener('touchmove', e => {
+  lastTouchAt = Date.now();
+  if (!magnifierActive) return;
+  const t = e.touches[0];
+  moveMagnifier(t.clientX, t.clientY);
+  e.preventDefault();   // nothing inside .stage scrolls, so this just stops the page fighting the drag
+}, { passive: false });
+stage.addEventListener('touchend', e => { lastTouchAt = Date.now(); endMagnifier(); });
+stage.addEventListener('touchcancel', e => { lastTouchAt = Date.now(); endMagnifier(); });
+
+stage.addEventListener('mouseenter', e => {
+  if (!isRecentTouch() && magnifierSvg()) startMagnifier(e.clientX, e.clientY);
+});
+stage.addEventListener('mousemove', e => { if (!isRecentTouch()) moveMagnifier(e.clientX, e.clientY); });
+stage.addEventListener('mouseleave', e => { if (!isRecentTouch()) endMagnifier(); });
+
 // Clicking a match sets the slider to it (setN), so the bracket advances to
 // that game and its details are shown -- the current game is one and the same.
 function setN(n) {
@@ -1237,12 +1494,16 @@ function setN(n) {
   renderDetails(n - 1);   // details follow the most recently played match
 }
 
+function hostFlagsAndNames(y) {
+  const host = ALL.byYear[y].host || [];
+  const flags = host.map(h => h.code && FLAGS[h.code]
+    ? `<img class="yr-flag" src="${FLAGS[h.code]}">` : '').join('');
+  return { flags, names: host.map(h => h.name).join(' & ') };
+}
+
 function buildYearList() {
   const html = ALL.years.map(y => {
-    const host = ALL.byYear[y].host || [];
-    const flags = host.map(h => h.code && FLAGS[h.code]
-      ? `<img class="yr-flag" src="${FLAGS[h.code]}">` : '').join('');
-    const names = host.map(h => h.name).join(' & ');
+    const { flags, names } = hostFlagsAndNames(y);
     return `<div class="year-row${y === YEAR ? ' active' : ''}" data-y="${y}">` +
       `<div class="yr-top"><span class="yr-num">${y} –</span>${flags}</div>` +
       `<div class="yr-host">${names}</div>` +
@@ -1250,8 +1511,21 @@ function buildYearList() {
   }).join('');
   document.getElementById('years').innerHTML = html;
   document.querySelectorAll('.year-row').forEach(r =>
-    r.addEventListener('click', () => selectYear(+r.dataset.y)));
+    r.addEventListener('click', () => { selectYear(+r.dataset.y); closeYearMenu(); }));
 }
+
+// Mobile only: the year list is a full-screen overlay there (see .years.open
+// CSS), toggled by tapping the compact bar above the stage that shows the
+// currently-selected year. Harmless no-op on desktop, where .years is always
+// visible and #yearbar itself is hidden by CSS.
+function renderYearBar() {
+  const { flags, names } = hostFlagsAndNames(YEAR);
+  document.getElementById('yearbar').innerHTML =
+    `<b>${YEAR}</b>${flags}<span class="yb-host">${names}</span><span class="chev">&#9662;</span>`;
+}
+function toggleYearMenu() { document.querySelector('.years').classList.toggle('open'); }
+function closeYearMenu() { document.querySelector('.years').classList.remove('open'); }
+document.getElementById('yearbar').addEventListener('click', toggleYearMenu);
 
 // Switches the whole page to a different edition: new bracket geometry, team
 // roster, results list and match details. Shared assets (FLAGS/CRESTS/logo)
@@ -1267,8 +1541,10 @@ function selectYear(y) {
   // the bracket's entry round, so they're not all in D.teams above
   (D.groups || []).forEach(g => g.standings.forEach(s => { if (!NAME[s.code]) NAME[s.code] = s.name; }));
   document.querySelectorAll('.year-row').forEach(r => r.classList.toggle('active', +r.dataset.y === YEAR));
+  document.body.classList.remove('show-results');
   document.querySelector('.footer').style.display = '';
   document.querySelector('.sidebar').style.display = '';
+  renderYearBar();
   renderTabs();
   stage.innerHTML = staticSvg();
   buildResults();
@@ -1294,6 +1570,15 @@ document.getElementById('play').addEventListener('click', e => {
 
 buildYearList();
 selectYear(YEAR);
+// selectYear -> setN scrolls the latest result row into view, which can drag
+// the whole (horizontally-overflowing, see .main's min-width) page sideways
+// on a narrow viewport; pin it back to the leftmost column on load. (body's
+// overflow-x propagates to the viewport per the CSS Overflow spec, since
+// :root/html has no overflow of its own, so this -- not body.scrollLeft --
+// is what actually controls that scroll position.) Deferred a frame: the
+// scrollIntoView above doesn't take effect until the next layout, so an
+// immediate reset here would just be overridden by it right afterward.
+requestAnimationFrame(() => window.scrollTo(0, 0));
 </script>
 </body>
 </html>
